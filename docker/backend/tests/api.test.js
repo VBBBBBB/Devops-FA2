@@ -24,7 +24,7 @@ describe('Backend API', () => {
 
     test('GET / returns the welcome message', async () => {
         const res = await request(app).get('/');
-        expect(res.statusCode).toBe(200);
+        expect(res.statusCode).toBe(201);
         expect(res.body.message).toMatch(/up and running/);
     });
 
